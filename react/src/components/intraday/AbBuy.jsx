@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 const AbBuy = () => {
+const navigate = useNavigate();
   const [data, setData] = useState({
     high: 0,
     low: 0,
@@ -65,8 +67,17 @@ const AbBuy = () => {
 
   return (
     <div className="w-full ">
-      <h2 className="text-center">AB candle strategy </h2>
+        <div className=" flex justify-left gap-15">
+          <Button onClick={() => navigate("/intraday")} className="p-5 font-bold text-xl">
+                Back
+              </Button>
+          <div>
+            <h2 className="text-center">AB candle strategy </h2>
       <h2 className="text-center">Body smaller than wick risk:reward 1:1</h2>
+          </div>
+      
+        </div>
+        
       <div className="flex mr-10">
         <div className="flex-1  rounded-2xl w-1/4 gap-6 mt-6 mr-6 bg-gray-800 h-125">
           <div className="p-5 ">

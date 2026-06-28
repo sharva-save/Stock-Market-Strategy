@@ -6,8 +6,8 @@ import Strategies from "./components/Strategies";
 import History from "./components/History";
 import Settings from "./components/Settings";
 import Intraday from "./components/intraday/Intraday";
-import AbInfo from "./components/intraday/AbInfo"
-import AbBuy from "./components/intraday/AbBuy"
+import AbInfo from "./components/intraday/AbInfo";
+import AbBuy from "./components/intraday/AbBuy";
 
 export default function App() {
   return (
@@ -19,11 +19,9 @@ export default function App() {
           <Route path="/history" element={<History />} />
           <Route path="/settings" element={<Settings />} />
 
-
           <Route path="/intraday" element={<Intraday />} />
           <Route path="/abInfo" element={<AbInfo />} />
           <Route path="/ab-buy" element={<AbBuy />} />
-          
         </Routes>
       </Layout>
     </BrowserRouter>

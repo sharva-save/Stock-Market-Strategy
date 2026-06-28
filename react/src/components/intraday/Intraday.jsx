@@ -16,7 +16,7 @@ const Intraday = () => {
       id: 1,
       img: "../../../public/assets/ab.png",
       title: "Ab Candle Strategy",
-      action: "BUY",
+      action: "CALCULATE",
       text: "Body smaller than wick",
       riskReard: "1:1 Risk:Reward",
       button: "View Details",
